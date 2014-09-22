@@ -1,0 +1,39 @@
+'''
+Created on Sep 22, 2014
+
+@author: iwemuiser
+'''
+
+##############################
+#	CHANGE THESE SETTINGS
+#
+# First register yourself at the folktale database:
+# http://www.verhalenbank.nl/guest-user/user/register
+#
+# Wait for approval and activation of you account.
+#
+# Get your API key from the admin site of the Folktale Database:
+# http://www.verhalenbank.nl/admin/users
+#
+# Entering no API key will only fetch public data
+
+YOUR_OMEKA_API_KEY = None
+
+# Set directory for the json files. (for instance /home/foo/data/folktale_flat_files/)
+# Files to be used start with "flat_" 
+
+EXPORT_DIR = ""
+
+
+##############################
+#	LEAVE AS IS:
+#
+# API location (fetching takes about 5 minutes)
+
+DATABASE_LOCATION = "http://www.verhalenbank.nl/api"
+#CLIENT_BASE = "http://127.0.0.1/vb/api"         #If you have a local version of omeka installed
+
+# Results per page. (server set to maximum of 50). 
+# Making this number higher will result in errors. Lower is ok.
+
+RESULTS_PER_PAGE = 50
